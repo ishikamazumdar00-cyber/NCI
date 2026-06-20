@@ -25,7 +25,7 @@ dept_df = reviews_df.copy()
 # HEADER
 # ==========================
 
-st.title("🏥 NCI Nagpur Training Needs Dashboard")
+st.title("🏥 NCI Nagpur Review's Trend Analysis")
 st.caption("Generated from Google Review Analysis")
 
 # ==========================
