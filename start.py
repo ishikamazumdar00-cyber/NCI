@@ -160,12 +160,7 @@ training_needs = pd.DataFrame({
     ]
 })
 
-import streamlit.components.v1 as components
 
-with open("training_needs_dashboard.html", "r", encoding="utf-8") as f:
-    html = f.read()
-
-components.html(html, height=1000, scrolling=True)
 # Display in Streamlit
 st.dataframe(training_needs, use_container_width=True, hide_index=True)
 
