@@ -90,9 +90,9 @@ st.plotly_chart(fig1, use_container_width=True)
 # ==========================
 st.divider()
 
-st.subheader("Training Needs Matrix — NCI Nagpur (Derived from Patient Reviews)")
+st.title("Training Needs Matrix — NCI Nagpur (Derived from Patient Reviews)")
 
-st.title("Review Analysis Dashboard")
+st.subheader("Review Analysis Dashboard")
 
 col1, col2, col3, col4, col5 = st.columns(5)
 
