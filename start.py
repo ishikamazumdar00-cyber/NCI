@@ -92,6 +92,16 @@ st.divider()
 
 st.subheader("Training Needs Matrix — NCI Nagpur (Derived from Patient Reviews)")
 
+st.title("Review Analysis Dashboard")
+
+col1, col2, col3, col4, col5 = st.columns(5)
+
+col1.metric("Total Reviews Analysed", 177)
+col2.metric("Reviews Rated 1 Star", 157)
+col3.metric("Reviews Rated 2 Star", 21)
+col4.metric("Issue Categories Identified", 10)
+col5.metric("High Priority Areas", 6)
+
 training_needs = pd.DataFrame({
     "Issue Category": [
         "Waiting Time / Delays",
