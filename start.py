@@ -221,6 +221,16 @@ fig3 = px.pie(
 
 st.plotly_chart(fig3, use_container_width=True)
 
+import streamlit as st
+import streamlit.components.v1 as components
+
+sheet_id = "10ETaiTABN2d2CEbQoo15ykL57dBeFYGOTZxwJaJN1dI"
+
+components.iframe(
+    f"https://docs.google.com/spreadsheets/d/{sheet_id}/preview",
+    height=900,
+    scrolling=True
+)
 
 
 # ==========================
