@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(
-    page_title="NCI Nagpur Training Needs Dashboard",
+    page_title="NCI Nagpur Review's Trend analysis",
     page_icon="🏥",
     layout="wide"
 )
