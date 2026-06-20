@@ -88,6 +88,10 @@ st.plotly_chart(fig1, use_container_width=True)
 # ==========================
 # DEPARTMENT PRIORITY
 # ==========================
+st.divider()
+
+st.subheader("Training Needs Matrix — NCI Nagpur (Derived from Patient Reviews)")
+
 training_needs = pd.DataFrame({
     "Issue Category": [
         "Waiting Time / Delays",
