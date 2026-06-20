@@ -88,7 +88,76 @@ st.plotly_chart(fig1, use_container_width=True)
 # ==========================
 # DEPARTMENT PRIORITY
 # ==========================
+training_needs = pd.DataFrame({
+    "Issue Category": [
+        "Waiting Time / Delays",
+        "Billing / Costs",
+        "Management / Administration",
+        "Staff Behaviour / Rudeness",
+        "Communication / Information",
+        "Other / General",
+        "Staff Availability / Shortage",
+        "Nursing Care",
+        "Patient Empathy / Emotional",
+        "Hygiene / Cleanliness",
+        "Technology / Network"
+    ],
+    "Frequency": [
+        66,
+        45,
+        43,
+        31,
+        27,
+        17,
+        15,
+        15,
+        9,
+        6,
+        3
+    ],
+    "% of 1–2★ Reviews": [
+        "52.4%",
+        "35.7%",
+        "34.1%",
+        "24.6%",
+        "21.4%",
+        "13.5%",
+        "11.9%",
+        "11.9%",
+        "7.1%",
+        "4.8%",
+        "2.4%"
+    ],
+    "Priority": [
+        "HIGH",
+        "HIGH",
+        "HIGH",
+        "HIGH",
+        "HIGH",
+        "MEDIUM",
+        "MEDIUM",
+        "MEDIUM",
+        "LOW",
+        "LOW",
+        "LOW"
+    ],
+    "Training Need": [
+        "Process Efficiency & Time Management",
+        "Financial Communication & Ethics",
+        "Administrative Systems & Coordination",
+        "Communication & Professional Conduct",
+        "Patient Communication & Counselling",
+        "General Training",
+        "Workforce Planning & Supervision",
+        "Clinical Care Standards",
+        "Empathy & Emotional Intelligence",
+        "Infection Control & Hygiene",
+        "Digital Systems"
+    ]
+})
 
+# Display in Streamlit
+st.dataframe(training_needs, use_container_width=True, hide_index=True)
 
 # ==========================
 # STAR RATING DISTRIBUTION
